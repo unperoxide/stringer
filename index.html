@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Stringer - Base64, Hex, Password, UUIDv4, JSON</title>
+    <meta name="title" content="Stringer - Base64, Hex, Passwords, UUIDv4, JSON" />
+    <meta name="description"
+        content="Explore our versatile online tool for encoding and decoding data in various formats like Base64 and Hex. Generate strong passwords, UUIDv4, and encryption keys effortlessly. Easily format JSON data for seamless integration. Simplify your data manipulation tasks with our user-friendly web application." />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stringer.pages.dev/" />
+    <meta property="og:title" content="Stringer - Base64, Hex, Passwords, UUIDv4, JSON" />
+    <meta property="og:description"
+        content="Explore our versatile online tool for encoding and decoding data in various formats like Base64 and Hex. Generate strong passwords, UUIDv4, and encryption keys effortlessly. Easily format JSON data for seamless integration. Simplify your data manipulation tasks with our user-friendly web application." />
+    <meta property="og:image" content="/images/meta-banner.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://stringer.pages.dev/" />
+    <meta property="twitter:title" content="Stringer - Base64, Hex, Passwords, UUIDv4, JSON" />
+    <meta property="twitter:description"
+        content="Explore our versatile online tool for encoding and decoding data in various formats like Base64 and Hex. Generate strong passwords, UUIDv4, and encryption keys effortlessly. Easily format JSON data for seamless integration. Simplify your data manipulation tasks with our user-friendly web application." />
+    <meta property="twitter:image" content="/images/meta-banner.png" />
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Mono:400|Material+Icons" />
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body class="bg-light">
+
+    <nav class="d-none navbar bg-primary" style="border-radius: 0;">
+        <div class="container">
+            <a class="navbar-brand mx-auto">Stringer</a>
+        </div>
+    </nav>
+
+    <main class="container pb-5 mt-3 mt-md-5" style="max-width: 580px">
+        <section class="bg-white px-5 py-3 border w-100 text-center">
+
+            <div class="pt-3 pb-5">
+                <!-- <h1 class="h3 mb-4">Stringer</h1> -->
+
+                <div class="dropdown ml-3">
+
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2" data-title="">Base64 Encode</span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" data-mode-select="3">Base64 Encode</a>
+                        <a class="dropdown-item" data-mode-select="4">Base64 Decode</a>
+                        <a class="dropdown-item" data-mode-select="1">Hex Encode</a>
+                        <a class="dropdown-item" data-mode-select="2">Hex Decode</a>
+                        <a class="dropdown-item" data-mode-select="5">Password</a>
+                        <a class="dropdown-item" data-mode-select="6">UUID v4</a>
+                        <a class="dropdown-item" data-mode-select="7">Key</a>
+                        <a class="dropdown-item" data-mode-select="8">Key (Caps)</a>
+                        <a class="dropdown-item" data-mode-select="9">JSON Format</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" id="input" placeholder="Enter Text" rows="5" autocapitalize="false"
+                    autocomplete="false" spellcheck="false"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="float-right">
+                    <button id="btn-copy" class="btn _btn-primary btn-fab btn-round"
+                        style="color: #333;background-color: #eee;">
+                        <i class="material-icons" style="font-size: 16px;">content_copy</i>
+                    </button>
+                </div>
+
+                <textarea class="form-control" id="output" rows="5" autocapitalize="false" autocomplete="false"
+                    spellcheck="false" style="font-family: 'Roboto Mono', Consolas, Courier, monospace;"></textarea>
+            </div>
+
+            <div class="">
+                <div class="float-left mt-2">
+                    <input type="number" class="form-control text-center" style="width: 60px;" id="length-input"
+                        value="18">
+                </div>
+
+                <div class="float-right">
+                    <button id="btn-submit" class="btn btn-primary mt-2">Submit</button>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+
+        <div class="w-100 text-center mt-5">
+            <h6><a href="https://github.com/unperoxide" target="_blank">Made with &#128156; by Unperoxide</a></h6>
+        </div>
+    </main>
+
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/popper.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap-material-design.min.js" type="text/javascript"></script>
+
+    <script src="/js/stringer.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

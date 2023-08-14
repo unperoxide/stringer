@@ -1,0 +1,28 @@
+@import url("material-kit.min.css");
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    border-radius: 1px !important;
+}
+
+.dropdown-menu .dropdown-item {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #333 !important;
+    background: #eee !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+    color: #333 !important;
+    background: #e0e0e0 !important;
+    box-shadow: none !important;
+}
